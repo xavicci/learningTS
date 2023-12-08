@@ -1,17 +1,16 @@
-enum ROLES {
-    ADMIN = 1,
-    SELLER = "seller",
-    CUSTOMER = "customer",
+export enum ROLES {
+  ADMIN = "admin",
+  SELLER = "seller",
+  CUSTOMER = "customer",
 }
 
-type User = {
-    username: string;
-    role: ROLES;
+
+export type User = {
+  username: string;
+  role: ROLES;
 }
 
-const xaviUser: User = {
-    username: 'xavicci669',
-    role: ROLES.ADMIN,
+const nicoUser: User = {
+  username: 'nicobytes',
+  role: ROLES.SELLER
 }
-
-console.log(xaviUser)
